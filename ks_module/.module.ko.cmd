@@ -1,0 +1,1 @@
+cmd_/home/kevin/Projects/c/module/module.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/kevin/Projects/c/module/module.ko /home/kevin/Projects/c/module/module.o /home/kevin/Projects/c/module/module.mod.o ;  true

@@ -1,0 +1,1 @@
+cmd_/home/kevin/Projects/c/ks_module/ks4.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/kevin/Projects/c/ks_module/ks4.ko /home/kevin/Projects/c/ks_module/ks4.o /home/kevin/Projects/c/ks_module/ks4.mod.o ;  true

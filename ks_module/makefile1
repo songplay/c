@@ -1,0 +1,5 @@
+obj-m := ks3
+KDIR :=/lib/modules/4.10.0-rc2kevin_first_patch/build
+MDIR :=/home/kevin/Projects/c/ks_module
+default:
+	$(MAKE) -C $(KDIR) -M=$(MDIR) modules

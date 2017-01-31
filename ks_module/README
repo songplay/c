@@ -1,0 +1,18 @@
++ build
+kevin@Dell-6400:~/Projects/c/ks_module$ make
+make -C /lib/modules/4.10.0-rc2kevin_first_patch/build M=/home/kevin/Projects/c/ks_module modules
+make[1]: Entering directory `/home/kevin/Projects/git/kernels/staging'
+  CC [M]  /home/kevin/Projects/c/ks_module/ks_module.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/kevin/Projects/c/ks_module/ks_module.mod.o
+  LD [M]  /home/kevin/Projects/c/ks_module/ks_module.ko
+make[1]: Leaving directory `/home/kevin/Projects/git/kernels/staging'
+
++ install 
+kevin@Dell-6400:~/Projects/c/ks_module$ sudo insmod ./ks_module.ko
+kevin@Dell-6400:~/Projects/c/ks_module$ dmesg |tail
+
++ uninstall
+kevin@Dell-6400:~/Projects/c/ks_module$ sudo rmmod ks_module 
+(modprobe -r will not work)
